@@ -697,6 +697,12 @@ section {
     border: 3px solid #6f6f6f;
 }
 
+iframe {
+    width: 100%;   
+    height: auto;   
+    aspect-ratio: 16/9; 
+}
+
 .feature-card h5 {
     background-color: #4372bd;
     color: white;
@@ -1184,6 +1190,11 @@ section {
     .view-more-link {
         padding: 13px;
         font-size: 18px;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: auto; 
     }
 }
 
