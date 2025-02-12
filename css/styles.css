@@ -497,7 +497,7 @@ section {
     background-color: rgba(169, 143, 255, 0.7);
 }
 
-.project-detail-type.degree {
+.project-detail-type.project-degree {
     background-color: rgba(76, 166, 76, 0.7);
 }
 
@@ -568,6 +568,12 @@ section {
     margin-bottom: 20px;
     max-width: 100%;
     height: auto;
+}
+
+.project-overview-card .mobile-app img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: 500px !important;
 }
 
 .project-overview-card h3 {
@@ -735,8 +741,8 @@ iframe {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 70px;
-    height: 70px;
-    filter: invert(1);
+    height: auto;
+    filter: invert(-1);
     background-size: 100%;
 }
 
@@ -746,7 +752,7 @@ iframe {
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* 2.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
