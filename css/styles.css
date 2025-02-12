@@ -1,0 +1,1600 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+    text-decoration: none !important;
+}
+
+:root {
+    --bg-color: #111c37;
+    --text-color: #fff;
+    --main-color: #00afff;
+
+    --big-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+/* Body Section */
+body {
+    background: var(--bg-color) !important;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 25px 15% !important;
+    background: rgb(24, 64, 123, 0.7) !important;
+    transition: all ease .45s !important;
+}
+
+.logo {
+    color: var(--text-color) !important;
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.menu-btn {
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon {
+    font-size: 28px;
+    z-index: 6;
+}
+
+section {
+    padding: 0 15%;
+}
+
+/************************************************************************************************************************/
+/* 1. Home Page */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-img {
+    width: 1000px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-text span {
+    padding: 5px 25px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 100px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#typing-text {
+    color: var(--main-color);
+    font-weight: bold;
+    border-right: 3px solid var(--main-color);
+    padding: 10px;
+    animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    margin: 30px 0;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+/* 1.1 Home Page - Buttons */
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-hire-me {
+    background: #fff;
+    border: 2px solid #141414;
+    color: #000;
+    margin-left: 25px;
+}
+
+.btn-hire-me:hover {
+    border: 2px solid #141414;
+    transform: translateY(-5px);
+    background: #141414;
+    color: #fff;
+}
+
+.share {
+    position: absolute;
+    bottom: 4rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.share p {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 25px;
+}
+
+.social i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0 15px;
+    transition: all 0.6s ease-in-out;
+}
+
+.social i:hover {
+    transform: translateY(-10px);
+}
+
+/************************************************************************************************************************/
+/* 2. About Me Page */
+.about-me {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 15%;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+.about-me-img {
+    width: 600px;
+}
+
+.about-me-img img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-text {
+    max-width: 600px;
+    color: var(--text-color);
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-text h3 {
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.about-text span {
+    transition: all 0.3s ease-in-out;
+    animation: flash 2s infinite alternate;
+    color: var(--main-color);
+}
+
+.about-text span:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    animation: none;
+    cursor: pointer;
+}
+
+/* 2.1 About Me Page - Flashing Animation for About Me Text */
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-text ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.about-text ul li {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    list-style-type: disc;
+}
+
+/* 2.2 About Me Page - Buttons */
+.about-me-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-about {
+    padding: 14px 20px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-about:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-projects {
+    background: #fff;
+    border: 2px solid #141414;
+    color: #000;
+    margin-left: 40px;
+}
+
+.btn-projects:hover {
+    border: 2px solid #141414;
+    transform: translateY(-5px);
+    background: #141414;
+    color: #fff;
+}
+
+/* 2.3 About Me Page - Download Documents Confirmation Dialog */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    color: #333;
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 25px;
+    color: #222;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #444;
+    color: #444;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.modal-content ul li {
+    font-size: 18px;
+    color: #444;
+    padding: 10px 0;
+    list-style: none;
+}
+
+/* 2.3.1 About Me Page - Download Documents Confirmation Dialog (Buttons) */
+.download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 25px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.close-btn {
+    padding: 10px 18px;
+    margin-top: 20px;
+    background: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+    background: #999;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/************************************************************************************************************************/
+/* 3. Projects Page */
+.projects {
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 15%;
+    gap: 50px;
+    margin-top: 120px;
+}
+
+.projects h2,
+.projects p,
+.projects h3 {
+    color: white;
+}
+
+.projects h2 {
+    margin-bottom: 10px;
+}
+
+.projects .text-center {
+    text-align: center;
+}
+
+.projects .mb-4 {
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.projects .degree-projects,
+.projects .diploma-projects {
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.numbering {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(24, 64, 123, 0.7);
+    background-color: rgb(24, 64, 123, 0.7);
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+.project-type {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.project-type.diploma {
+    background-color: rgba(132, 95, 255, 0.7);
+    /* DIPLOMA background color */
+    background-color: rgba(132, 95, 255, 0.7);
+    /* DIPLOMA background color */
+}
+
+.project-type.degree {
+    background-color: rgba(0, 128, 0, 0.7);
+    /* DEGREE background color */
+    background-color: rgba(0, 128, 0, 0.7);
+    /* DEGREE background color */
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: justify;
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-top: 40px;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    font-size: 20px !important;
+    font-size: 20px !important;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+/************************************************************************************************************************/
+/* 3.1 Projects Details Page - SEGi EduRate */
+/* 3.1.1 Project Details Page - SEGi EduRate >> Project Header Section */
+.project-header {
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15%;
+    background: rgb(24, 64, 123, 0.7);
+    transition: all ease .45s;
+    color: #fff;
+}
+
+.project-detail-type {
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+.project-detail-type {
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.project-header h3 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.project-detail-type.project-diploma {
+    background-color: rgba(169, 143, 255, 0.7);
+    /* DIPLOMA background color */
+}
+
+.project-detail-type.degree {
+    background-color: rgba(76, 166, 76, 0.7);
+    /* DEGREE background color */
+}
+
+.btn-share {
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: all ease 1s;
+}
+
+.btn-share:hover {
+    background: #5a7684;
+}
+
+.btn-copy-url {
+    background: #218838;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+    margin-top: 30px;
+}
+
+/* 3.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
+.project-title {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.project-overview-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-overview-card ul {
+    padding-left: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.project-overview-card ul li {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.project-overview-card .row img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-overview-card h3 {
+    font-size: 26px;
+    color: #333;
+}
+
+.project-overview-card p {
+    font-size: 20px;
+    color: #333;
+}
+
+.project-overview-card .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-overview-card .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-overview-card .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 3.1.3 Project Details Page - SEGi EduRate >> "Visit SEGi EduRate" button */
+.project-overview-card .btn-visit {
+    margin-top: 20px;
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+}
+
+.project-overview-card .btn-visit:hover {
+    background: #5a7684;
+    transform: scale(2);
+    color: #fff;
+}
+
+.btn-view-details {
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+}
+
+.btn-view-details:hover {
+    background: #5a7684;
+}
+
+/* Highlight feature animation */
+@keyframes flashing {
+    0% {
+        opacity: 1;
+        color: yellow;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: white;
+    }
+
+    100% {
+        opacity: 1;
+        color: yellow;
+    }
+}
+
+.highlight-feature {
+    font-size: 24px;
+    font-weight: bold;
+    animation: flashing 1s infinite;
+}
+
+/* 3.1.4 Project Details Page - SEGi EduRate >> Carousel for Key Features */
+.feature-lists ol {
+    padding-left: 20px;
+    color: #333;
+    font-size: 16px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.feature-lists ol li {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+
+#keyFeaturesCarousel {
+    width: 100%;
+}
+
+.feature-card {
+    width: 100%;
+    max-width: 100%;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #6f6f6f;
+}
+
+.feature-card img,
+.feature-card video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 3px solid #6f6f6f;
+}
+
+.feature-card h5 {
+    background-color: #4372bd;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-top: 1px solid #ddd;
+}
+
+.card-footer.text-muted {
+    color: #252525;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    z-index: 10;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 70px;
+    height: 70px;
+    filter: invert(1);
+    background-size: 100%;
+}
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 3.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
+.system-demo-card {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* 3.1.6 Project Details Page - SEGi EduRate >> Future Improvement */
+.future-improvements {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+    border-radius: 5px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.project-header h3 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.project-detail-type.project-diploma {
+    background-color: rgba(169, 143, 255, 0.7);
+    /* DIPLOMA background color */
+}
+
+.project-detail-type.degree {
+    background-color: rgba(76, 166, 76, 0.7);
+    /* DEGREE background color */
+}
+
+.btn-share {
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: all ease 1s;
+}
+
+.btn-share:hover {
+    background: #5a7684;
+}
+
+.btn-copy-url {
+    background: #218838;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+    margin-top: 30px;
+}
+
+/* 3.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
+.project-title {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.project-overview-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-overview-card ul {
+    padding-left: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.project-overview-card ul li {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.project-overview-card .row img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-overview-card h3 {
+    font-size: 26px;
+    color: #333;
+}
+
+.project-overview-card p {
+    font-size: 20px;
+    color: #333;
+}
+
+.project-overview-card .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-overview-card .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-overview-card .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 3.1.3 Project Details Page - SEGi EduRate >> "Visit SEGi EduRate" button */
+.project-overview-card .btn-visit {
+    margin-top: 20px;
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+}
+
+.project-overview-card .btn-visit:hover {
+    background: #5a7684;
+    transform: scale(2);
+    color: #fff;
+}
+
+.btn-view-details {
+    background: #188bf1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    transition: all ease 1s;
+}
+
+.btn-view-details:hover {
+    background: #5a7684;
+}
+
+/* Highlight feature animation */
+@keyframes flashing {
+    0% {
+        opacity: 1;
+        color: yellow;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: white;
+    }
+
+    100% {
+        opacity: 1;
+        color: yellow;
+    }
+}
+
+.highlight-feature {
+    font-size: 24px;
+    font-weight: bold;
+    animation: flashing 1s infinite;
+}
+
+/* 3.1.4 Project Details Page - SEGi EduRate >> Carousel for Key Features */
+.feature-lists ol {
+    padding-left: 20px;
+    color: #333;
+    font-size: 16px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.feature-lists ol li {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+
+#keyFeaturesCarousel {
+    width: 100%;
+}
+
+.feature-card {
+    width: 100%;
+    max-width: 100%;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #6f6f6f;
+}
+
+.feature-card img,
+.feature-card video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 3px solid #6f6f6f;
+}
+
+.feature-card h5 {
+    background-color: #4372bd;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-top: 1px solid #ddd;
+}
+
+.card-footer.text-muted {
+    color: #252525;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    z-index: 10;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 70px;
+    height: 70px;
+    filter: invert(1);
+    background-size: 100%;
+}
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 3.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
+.system-demo-card {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* 3.1.6 Project Details Page - SEGi EduRate >> Future Improvement */
+.future-improvements {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+/************************************************************************************************************************/
+/* 4. Contact Me Page */
+.contact-me {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15%;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    background: #1f2a46;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #c3c3c3;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.social-links a,
+.download-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    gap: 10px;
+}
+
+.social-links a:hover,
+.download-links .btn-download:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+
+.social-links a i,
+.download-links a i {
+    font-size: 1.5rem;
+}
+
+/* 4.1 Contact Me Page - Tooltip Text */
+.tooltip-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(254, 184, 236, 0.85);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-text::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(254, 184, 236, 0.85) transparent;
+}
+
+.result-tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0px);
+}
+
+/************************************************************************************************************************/
+/************************************************************************************************************************/
+/* Responsiveness */
+@media (max-width: 1850px) {
+    header {
+        padding: 32px 15%;
+    }
+
+    section {
+        padding: 0 15%;
+    }
+
+    .share {
+        left: 15%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1370px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    section {
+        padding: 0 4%
+    }
+
+    .share {
+        left: 4%;
+        transition: .2s;
+    }
+
+    :root {
+        --big-font: 5.5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 1500px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .navbar a {
+        margin: 0 15px;
+    }
+
+    :root {
+        --big-font: 5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-me-img {
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .about-me-btn {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .btn-about {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .btn-projects {
+        width: 100%;
+        max-width: 220px;
+        margin: 0;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 950px) {
+    .share {
+        display: none;
+    }
+
+    .section {
+        padding: 70px 4%;
+    }
+
+    header {
+        padding: 11px 4%;
+        background: #2d2d2d;
+    }
+
+    .home {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 10%;
+    }
+
+    .home-text {
+        order: 2;
+    }
+
+    .home-img {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .home-img img {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 34px;
+        background: var(--main-color);
+        color: var(--text-color);
+        border: 2px solid var(--main-color);
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: all 0.6s ease-in-out;
+        margin-bottom: 60px;
+    }
+
+    .btn-hire-me {
+        background: #fff;
+        border: 2px solid #141414;
+        color: #000;
+        margin-left: 25px;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .tooltip-text {
+        display: none;
+    }
+
+    .project-details-container {
+        padding: 10px;
+      }
+      
+      .highlight-feature {
+        font-size: 20px;
+      }
+      
+      .highlight-feature-desc {
+        font-size: 16px;
+      }
+      
+      .project-description {
+        font-size: 14px;
+      }
+}
+
+@media (max-width: 850px) {
+    .logo {
+        color: var(--text-color);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .home-img {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+        margin: 23px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 10px;
+        background: var(--main-color);
+        color: var(--text-color);
+        border: 2px solid var(--main-color);
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: all 0.6s ease-in-out;
+        margin-bottom: 60px;
+    }
+
+    .btn-hire-me {
+        background: #fff;
+        border: 2px solid #141414;
+        color: #000;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        --big-font: 4rem;
+        --p-font: 15px;
+        transition: .2s;
+    }
+
+    .btn {
+        padding: 9px 28px;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar a {
+        display: block;
+        color: #c3c3c3;
+        padding: 0px;
+        margin: 0px 0px 40px 0px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .navbar.open {
+        left: 0;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+}
+
+.home-img img {
+    animation: my_img 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes my_img {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-22px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
