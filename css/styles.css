@@ -709,7 +709,7 @@ section {
     width: 100%;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 16/9; 
+    aspect-ratio: 16/9;
     border: 3px solid #6f6f6f;
 }
 
@@ -1219,6 +1219,19 @@ section {
         width: 100%;
         height: auto;
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .feature-lists ol {
+        padding-left: 0; 
+        width: 100%; 
+        text-align: left; 
+    }
+
+    
 }
 
 @media (max-width: 850px) {
