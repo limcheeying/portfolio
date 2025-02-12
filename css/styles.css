@@ -802,6 +802,8 @@ iframe {
 .floating-btn:hover {
     background-color: #138496;
     transform: scale(1.1);
+    text-decoration: none;
+    color: white;
 }
 
 /* Tooltip styling */
@@ -1252,6 +1254,11 @@ iframe {
     .floating-btn {
         bottom: 80px;
         right: 60px;
+    }
+
+    .project-card {
+        max-width: 600px;
+        width: 100%;
     }
 }
 
