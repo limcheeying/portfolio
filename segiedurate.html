@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +37,7 @@
                         lecturers and managing the lecturer evaluation process.</p>
                     <p><strong>Technologies Used:</strong> CodeIgniter, Bootstrap, PHP, JavaScript, MySQL (managed via
                         TablePlus)</p>
+                    <p><strong>Development Time:</strong> September - December 2023</p> 
                     <p><strong>Features: -</strong>
                     <ul>
                         <li>Enabled admins to manage users (students & lecturers), courses, semesters, and evaluation
@@ -101,8 +102,8 @@
                 <div class="carousel-item">
                     <div class="feature-card shadow-lg text-center">
                         <h5>(2) Manage Users (Add, Modify, Delete, Add via Excel Upload)</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/sNLqas__JM8?autoplay=1&mute=1"
-                            frameborder="0"
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/sNLqas__JM8?autoplay=1&mute=1" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -121,8 +122,8 @@
                 <div class="carousel-item">
                     <div class="feature-card shadow-lg text-center">
                         <h5>(3) Manage Semesters</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/iwvin3_dEds?autoplay=1&mute=1"
-                            frameborder="0"
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/iwvin3_dEds?autoplay=1&mute=1" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -141,8 +142,8 @@
                 <div class="carousel-item">
                     <div class="feature-card shadow-lg text-center">
                         <h5>(4) Manage Evaluations</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/ckjKvFes6dw?autoplay=1&mute=1"
-                            frameborder="0"
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/ckjKvFes6dw?autoplay=1&mute=1" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -161,8 +162,8 @@
                 <div class="carousel-item">
                     <div class="feature-card shadow-lg text-center">
                         <h5>(5) Anonymous Evaluation Submission</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/0mNX_QJUnmc?autoplay=1&mute=1"
-                            frameborder="0"
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/0mNX_QJUnmc?autoplay=1&mute=1" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -180,8 +181,8 @@
                 <div class="carousel-item">
                     <div class="feature-card shadow-lg text-center">
                         <h5>(6) Evaluation Report</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/d_qbTob4dlM?autoplay=1&mute=1"
-                            frameborder="0"
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/d_qbTob4dlM?autoplay=1&mute=1" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -241,18 +242,13 @@
             <p>Currently, evaluations are based on specific programs. A planned improvement is introducing a
                 faculty-level hierarchy, grouping programs under faculties, allowing more insightful evaluations at both
                 levels.</p>
-
-            <p><strong>3. Enhanced Role-Based Access Control</strong></p>
-            <p>Admins currently have broad privileges. A refined role-based control will be introduced:</p>
-            <ul>
-                <li><strong>Faculty Leaders:</strong> Manage programs, assign admins, and oversee enrollments.</li>
-                <li><strong>Sub-Administrators:</strong> Handle semester management within their assigned
-                    faculty/program.</li>
-                <li>Ensures secure, structured administration aligned with institutional needs.</li>
-            </ul>
         </div>
 
-        <button>Back to Projects Page</button>
+        <!-- Floating Back Button -->
+        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="left"
+            title="Click to go back to projects page">
+            < </a>
+
     </section>
 
     <!-- Share URL Dialog -->
@@ -283,6 +279,8 @@
 
     <script>
         $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
             // Disable Bootstrap's automatic slide when interacting
             var myCarousel = $('#keyFeaturesCarousel');
             myCarousel.carousel({

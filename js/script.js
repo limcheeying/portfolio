@@ -25,15 +25,7 @@ const sr = ScrollReveal({
 sr.reveal('.logo', { delay: 200, origin: 'left' });
 sr.reveal('.menu-btn', { delay: 520, origin: 'right' });
 
-sr.reveal('.home-text span', { delay: 600, origin: 'top' });
-sr.reveal('.home-text h1', { delay: 680, origin: 'left' });
-sr.reveal('.home-text p', { delay: 700, origin: 'right' });
-
 sr.reveal('.main-btn', { delay: 860, origin: 'left' });
-
-sr.reveal('.share', { delay: 950, origin: 'bottom' });
-
-sr.reveal('.home-img', { delay: 1000, origin: 'right' });
 
 // Home Page - Typing effect  
 document.addEventListener("DOMContentLoaded", function () {

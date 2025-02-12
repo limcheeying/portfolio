@@ -189,7 +189,7 @@ section {
     color: var(--main-color);
 }
 
-/* 2.2 About Me Page - Buttons */
+/* 1.2 About Me Page - Buttons */
 .about-me-btn {
     display: flex;
     gap: 20px;
@@ -229,7 +229,7 @@ section {
     color: #fff;
 }
 
-/* 2.3 About Me Page - Download Documents Confirmation Dialog */
+/* 1.3 About Me Page - Download Documents Confirmation Dialog */
 .modal {
     display: none;
     position: fixed;
@@ -282,7 +282,7 @@ section {
     list-style: none;
 }
 
-/* 2.3.1 About Me Page - Download Documents Confirmation Dialog (Buttons) */
+/* 1.3.1 About Me Page - Download Documents Confirmation Dialog (Buttons) */
 .download-btn {
     display: block;
     width: 100%;
@@ -332,7 +332,7 @@ section {
 }
 
 /************************************************************************************************************************/
-/* 3. Projects Page */
+/* 2. Projects Page */
 .projects {
     position: relative;
     width: 100%;
@@ -340,7 +340,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 50px 15%;
-    gap: 50px; 
+    gap: 50px;
     margin-top: 100px;
     text-align: center;
 }
@@ -355,17 +355,17 @@ section {
     margin-bottom: 50px;
 }
 
-/* 3.1 Projects Page - Project Cards */
+/* 2.1 Projects Page - Project Cards */
 .projects-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; 
+    gap: 50px;
 }
 
 .project-card {
     background-color: #fff;
-    max-width: 500px; 
+    max-width: 500px;
     width: 100%;
     position: relative;
     border-radius: 8px;
@@ -373,8 +373,9 @@ section {
     overflow: hidden;
     transition: transform 0.3s;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 30px;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -423,8 +424,7 @@ section {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    gap: 15px; 
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .project-name {
@@ -452,18 +452,16 @@ section {
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .view-more-link:hover {
     background-color: #138496;
 }
 
-
-
 /************************************************************************************************************************/
-/* 3.1 Projects Details Page - SEGi EduRate */
-/* 3.1.1 Project Details Page - SEGi EduRate >> Project Header Section */
+/* 2.1 Projects Details Page - SEGi EduRate */
+/* 2.1.1 Project Details Page - SEGi EduRate >> Project Header Section */
 .project-header {
     /* position: fixed; */
     top: 0;
@@ -477,20 +475,15 @@ section {
     background: rgb(24, 64, 123, 0.7);
     transition: all ease .45s;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 .project-detail-type {
-    color: white;
-    padding: 5px 20px;
-    font-size: 1.1rem;
-.project-detail-type {
-    color: white;
-    padding: 5px 20px;
     font-size: 1.1rem;
     font-weight: bold;
+    color: white;
+    padding: 10px 15px;
     border-radius: 5px;
-    margin-right: 15px;
-    display: inline-block;
 }
 
 .project-header h3 {
@@ -501,12 +494,10 @@ section {
 
 .project-detail-type.project-diploma {
     background-color: rgba(169, 143, 255, 0.7);
-    /* DIPLOMA background color */
 }
 
 .project-detail-type.degree {
     background-color: rgba(76, 166, 76, 0.7);
-    /* DEGREE background color */
 }
 
 .btn-share {
@@ -539,7 +530,7 @@ section {
     margin-top: 30px;
 }
 
-/* 3.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
+/* 2.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
 .project-title {
     color: #fff;
     margin-top: 40px;
@@ -548,15 +539,15 @@ section {
 
 .project-overview-card {
     background-color: #f9f9f9;
-    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
     line-height: 1.5;
     color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
 }
 
 .project-overview-card ul {
@@ -607,7 +598,7 @@ section {
     justify-content: center;
 }
 
-/* 3.1.3 Project Details Page - SEGi EduRate >> "Visit SEGi EduRate" button */
+/* 2.1.3 Project Details Page - SEGi EduRate >> "Visit SEGi EduRate" button */
 .project-overview-card .btn-visit {
     margin-top: 20px;
     background: #188bf1;
@@ -667,7 +658,7 @@ section {
     animation: flashing 1s infinite;
 }
 
-/* 3.1.4 Project Details Page - SEGi EduRate >> Carousel for Key Features */
+/* 2.1.4 Project Details Page - SEGi EduRate >> Carousel for Key Features */
 .feature-lists ol {
     padding-left: 20px;
     color: #333;
@@ -682,7 +673,6 @@ section {
     color: var(--text-color);
     font-size: 20px;
 }
-
 
 #keyFeaturesCarousel {
     width: 100%;
@@ -752,7 +742,7 @@ section {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* 3.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
+/* 2.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
 .system-demo-card {
     width: 100%;
     background: #f9f9f9;
@@ -764,308 +754,63 @@ section {
     color: #333;
 }
 
-/* 3.1.6 Project Details Page - SEGi EduRate >> Future Improvement */
+/* 2.1.6 Project Details Page - SEGi EduRate >> Future Improvement */
 .future-improvements {
     width: 100%;
     background: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     line-height: 1.8;
     color: #333;
 }
-    border-radius: 5px;
-    margin-right: 15px;
-    display: inline-block;
+
+.future-improvements p {
+    font-size: 20px;
 }
 
-.project-header h3 {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0;
-}
-
-.project-detail-type.project-diploma {
-    background-color: rgba(169, 143, 255, 0.7);
-    /* DIPLOMA background color */
-}
-
-.project-detail-type.degree {
-    background-color: rgba(76, 166, 76, 0.7);
-    /* DEGREE background color */
-}
-
-.btn-share {
-    background: #188bf1;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    transition: all ease 1s;
-}
-
-.btn-share:hover {
-    background: #5a7684;
-}
-
-.btn-copy-url {
-    background: #218838;
-    color: #fff;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    transition: all ease 1s;
-    margin-top: 30px;
-}
-
-/* 3.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
-.project-title {
-    color: #fff;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-.project-overview-card {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.project-overview-card ul {
-    padding-left: 20px;
-    color: #333;
+.future-improvements ul li {
     font-size: 18px;
 }
 
-.project-overview-card ul li {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #333;
-    font-size: 20px;
-}
-
-.project-overview-card .row img {
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.project-overview-card h3 {
-    font-size: 26px;
-    color: #333;
-}
-
-.project-overview-card p {
-    font-size: 20px;
-    color: #333;
-}
-
-.project-overview-card .row {
+/* Floating button styles */
+.floating-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+    background-color: #17a2b8;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.project-overview-card .col-md-5 {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.project-overview-card .col-md-7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* 3.1.3 Project Details Page - SEGi EduRate >> "Visit SEGi EduRate" button */
-.project-overview-card .btn-visit {
-    margin-top: 20px;
-    background: #188bf1;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    transition: all ease 1s;
-}
-
-.project-overview-card .btn-visit:hover {
-    background: #5a7684;
-    transform: scale(2);
-    color: #fff;
-}
-
-.btn-view-details {
-    background: #188bf1;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    transition: all ease 1s;
-}
-
-.btn-view-details:hover {
-    background: #5a7684;
-}
-
-/* Highlight feature animation */
-@keyframes flashing {
-    0% {
-        opacity: 1;
-        color: yellow;
-    }
-
-    50% {
-        opacity: 0.5;
-        color: white;
-    }
-
-    100% {
-        opacity: 1;
-        color: yellow;
-    }
-}
-
-.highlight-feature {
-    font-size: 24px;
-    font-weight: bold;
-    animation: flashing 1s infinite;
-}
-
-/* 3.1.4 Project Details Page - SEGi EduRate >> Carousel for Key Features */
-.feature-lists ol {
-    padding-left: 20px;
-    color: #333;
-    font-size: 16px;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.feature-lists ol li {
-    list-style-type: decimal;
-    padding-left: 20px;
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-
-#keyFeaturesCarousel {
-    width: 100%;
-}
-
-.feature-card {
-    width: 100%;
-    max-width: 100%;
-    background-color: #f0f8ff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 3px solid #6f6f6f;
-}
-
-.feature-card img,
-.feature-card video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border: 3px solid #6f6f6f;
-}
-
-.feature-card h5 {
-    background-color: #4372bd;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.25rem;
-    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.card-footer {
-    background-color: #f8f9fa;
-    text-align: left;
-    padding: 10px;
-    font-size: 1.2rem;
-    border-top: 1px solid #ddd;
+.floating-btn:hover {
+    background-color: #138496;
+    transform: scale(1.1);
 }
 
-.card-footer.text-muted {
-    color: #252525;
+/* Tooltip styling */
+.tooltip-inner {
+    background-color: #17a2b8;
+    color: white;
+    font-size: 14px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-    z-index: 10;
-    opacity: 1;
-}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 70px;
-    height: 70px;
-    filter: invert(1);
-    background-size: 100%;
-}
 
-.carousel-inner {
-    padding: 20px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* 3.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
-.system-demo-card {
-    width: 100%;
-    background: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    line-height: 1.8;
-    color: #333;
-}
-
-/* 3.1.6 Project Details Page - SEGi EduRate >> Future Improvement */
-.future-improvements {
-    width: 100%;
-    background: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    line-height: 1.8;
-    color: #333;
-}
 
 
 /************************************************************************************************************************/
-/* 4. Contact Me Page */
+/* 3. Contact Me Page */
 .contact-me {
     position: relative;
     width: 100%;
@@ -1176,6 +921,7 @@ section {
 
 /************************************************************************************************************************/
 /************************************************************************************************************************/
+/************************************************************************************************************************/
 /* Responsiveness */
 @media (max-width: 1850px) {
     header {
@@ -1227,12 +973,47 @@ section {
         font-size: 30px;
         margin-bottom: 30px;
     }
-    
+
     .projects-description {
         font-size: 20px;
         margin-bottom: 50px;
         line-height: 1.5;
     }
+
+    .project-header {
+        padding: 25px 10%;
+    }
+
+    .btn-share {
+        font-size: 1rem;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .project-overview-card {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 20px;
+    }
+
+    .project-overview-card p, .project-overview-card ul {
+        width: 100%;
+    }
+
+    .project-detail-type {
+        font-size: 1rem;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-header h3 {
+        font-size: 24px;
+    }
+
+    .project-title {
+        font-size: 25px;
+    }
+    
 }
 
 @media (max-width: 1020px) {
@@ -1290,8 +1071,6 @@ section {
         width: 100%;
         max-width: 900px;
     }
-
-    
 }
 
 @media (max-width: 950px) {
@@ -1369,21 +1148,43 @@ section {
         display: none;
     }
 
-    .project-details-container {
-        padding: 10px;
-      }
-      
-      .highlight-feature {
+    .highlight-feature {
         font-size: 20px;
-      }
-      
-      .highlight-feature-desc {
+    }
+
+    .highlight-feature-desc {
         font-size: 16px;
-      }
-      
-      .project-description {
+    }
+
+    .project-description {
         font-size: 14px;
-      }
+    }
+
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    .project-name {
+        font-size: 22px;
+    }
+    
+    .project-description {
+        font-size: 18px;
+    }
+    
+    .view-more-link {
+        padding: 13px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -1425,6 +1226,11 @@ section {
         border: 2px solid #141414;
         color: #000;
         margin-left: 25px;
+    }
+
+    .floating-btn {
+        bottom: 100px;
+        right: 100px;
     }
 }
 
