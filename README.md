@@ -8,8 +8,8 @@ This personal portfolio website highlights my project experience and skills. It 
 ### Home Page  
 ![Home Page](screenshots/home_page.png)  
 
-### About Me Page  
-![About Me](screenshots/about_me_page.png)  
+### Projects Page  
+![Projects Page](screenshots/projects_page.png)  
 
 ### Contact Me Page  
 ![Contact Me](screenshots/contact_me_page.png)  
