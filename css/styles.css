@@ -1198,8 +1198,13 @@ iframe {
     }
 
     iframe {
-        max-width: 100%;
-        height: auto; 
+        width: auto;
+        height: auto;
+    }
+
+    .project-card {
+        width: auto;
+        height: auto;
     }
 }
 
