@@ -694,6 +694,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: 3px solid #6f6f6f;
+    overflow: hidden;
 }
 
 .feature-card img,
@@ -704,10 +705,12 @@ section {
     border: 3px solid #6f6f6f;
 }
 
-iframe {
+.feature-card iframe {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/9; 
+    border: 3px solid #6f6f6f;
 }
 
 .feature-card h5 {
@@ -1092,11 +1095,6 @@ iframe {
         width: 100%;
         height: auto;
     }
-
-    iframe {
-        width: 100%;
-        height: auto;
-    }
 }
 
 @media (max-width: 950px) {
@@ -1213,11 +1211,6 @@ iframe {
     }
 
     .feature-card video {
-        width: 100%;
-        height: auto;
-    }
-
-    iframe {
         width: 100%;
         height: auto;
     }
