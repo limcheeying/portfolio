@@ -1202,17 +1202,17 @@ iframe {
     }
 
     .feature-card video {
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
     iframe {
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
     .project-card {
-        width: auto;
+        width: 100%;
         height: auto;
     }
 }
