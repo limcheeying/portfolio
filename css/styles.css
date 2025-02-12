@@ -92,7 +92,7 @@ section {
 }
 
 /************************************************************************************************************************/
-/* 2. About Me Page */
+/* 1. Index Page */
 .about-me {
     position: relative;
     width: 100%;
@@ -157,7 +157,7 @@ section {
     cursor: pointer;
 }
 
-/* 2.1 About Me Page - Flashing Animation for About Me Text */
+/* 1.1 About Me Page - Flashing Animation for About Me Text */
 @keyframes flash {
     0% {
         opacity: 1;
