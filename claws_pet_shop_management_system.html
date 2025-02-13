@@ -25,42 +25,47 @@
         <h3 class="project-title text-center">Project Overview</h3>
         <div class="project-overview-card shadow-lg">
             <div class="row">
-                <div class="col-md-5 text-center">
-                    <img src="img/claws/dashboard.png" class="img-fluid rounded border border-black-5"
-                        alt="IT FlashLearn" title="Claws Pet Shop Management System's Dashboard">
-                </div>
+                <div class="col-md-5 text-center"> <img src="img/claws/homepage.png"
+                        class="img-fluid rounded border border-black-5"
+                        alt="Claws Pet Shop Management System's Home Page"
+                        title="Claws Pet Shop Management System's Home Page"> </div>
                 <div class="col-md-7">
                     <p><strong>System Name:</strong> Claws Pet Shop Management System</p>
-                    <p><strong>Aims:</strong> To enhance the study process for IT subjects by offering flip-to-reveal
-                        flashcards that promote active recall.</p>
+                    <p><strong>Aims:</strong> To streamline pet shop operations by managing products, employees,
+                        customers, and billing in an organized system.</p>
                     <p><strong>Technologies Used:</strong> C#, MS Access, Visual Studio</p>
-                    <p><strong>Development Time:</strong> December 2024</p>
-                    <p><strong>Features: -</strong>
+                    <p><strong>Development Time:</strong> December 2024 (Assignment of Windows Programming)</p>
+                    <p><strong>Features: -</strong></p>
                     <ul>
-                        <li>Enables pet shop staff to manage inventory, employees, and customer billing (without integrating payment gateway).</li>
-                        <li>Auto-updates product inventory and views transaction history. </li>
+                        <li>Provided a dashboard displaying key metrics, including total products, employees,
+                            customers, and revenue.</li>
+                        <li>Enabled staff to manage (view, add, modify, delete) products, employees, and customers.</li>
+                        <li>Implemented a billing system that automatically updates inventory and records transaction
+                            history.</li>
                     </ul>
-                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- Relevant System Demonstrations -->
-        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (6 Main Highlights)</h3>
+        <!-- Relevant System Screenshots -->
+        <h3 class="project-title text-center mt-5 text-white">Relevant System Screenshots</h3>
         <div class="container text-white">
             <div class="row">
                 <div class="col-md-6 feature-lists">
                     <ol>
-                        <li>Login (Forget Password)</li>
+                        <li>Login Page</li>
                         <li>Home Page</li>
-                        <li class="highlight-feature">Flashcards Page </li>
+                        <li>Products Page</li>
+                        <li>Add Product Page</li>
+                        <li>Modify Product Page</li>
                     </ol>
                 </div>
                 <div class="col-md-6 feature-lists">
-                    <ol start="4">
-                        <li>Save Flashcard as Favorite</li>
-                        <li>Share Flashcard (Text or Image)</li>
-                        <li>Profile</li>
+                    <ol start="6">
+                        <li>Employees Page</li>
+                        <li>Customers Page</li>
+                        <li>Billing Page</li>
+                        <li>Transaction History Page</li>
                     </ol>
                 </div>
             </div>
@@ -69,27 +74,146 @@
         <!-- Carousel -->
         <div id="keyFeaturesCarousel" class="features-card carousel slide shadow-lg" data-bs-touch="false">
             <div class="carousel-inner">
-                <!-- (1) Admin Dashboard -->
+                <!-- (1) Login Page -->
                 <div class="carousel-item active">
                     <div class="feature-card shadow-lg text-center">
-                        <h5>(1) Admin Dashboard</h5>
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/DepPADUXGn0?autoplay=1&mute=1" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <h5>(1) Login Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/login.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
 
                         <div class="card-footer text-muted text-justify">
-                            The admin dashboard offers an overview of system activities. It displays the active
-                            semesters and evaluation progress, along with several charts highlighting key metrics. All
-                            charts can be exported in SVG, PNG, or CSV format for further
-                            analysis and reporting. The final component is a calendar, allowing users to view the
-                            semester and evaluation durations.
+                            The login page allows pet shop staff to log into the system using their email and password,
+                            ensuring only authorized users can access the system.
                         </div>
                     </div>
                 </div>
 
+                <!-- (2) Home Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(2) Home Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/homepage.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            The home page provides an overview of the system's key metrics. It displays four cards
+                            showing the total products, total employees, total customers, and total revenue, each
+                            provided with a button to link to each relevant section.
+                        </div>
+                    </div>
+                </div>
 
+                <!-- (3) Products Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(2) Products Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/products_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            Under the "Products" tab, the Product Page displays a table with all products added to the
+                            system. It also includes a search function for users to filter products by category, making
+                            it easier to locate specific items.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (4) Add Product Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(2) Add Product Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/add_product_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            This page allows staff to add new products by filling in details such as product name,
+                            selecting the product category, and entering the quantity and price.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (5) Modify Product Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(5) Modify Product Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/modify_product_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            The Modify Product Page shows a list of all products in the system. The staff can search for
+                            a product by category, select a product from the table, and edit its details in the fields
+                            below or delete the selected product.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (6) Employees Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(6) Employees Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/employees_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            The staff can add, modify, and delete employees directly from this page. It includes a table
+                            listing all employees and fields for adding new employee information. Employees added here
+                            will also be able to log into the system.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (7) Customers Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(7) Customers Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/customers_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            The Customers page allows staff to view, add, modify, and delete customer records.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (8) Billing Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(8) Billing Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/billing_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            This page allowed staff to process sales transactions. It features a billing form where
+                            staff can select a customer, pick products by selecting a row in the product table, and add
+                            them to the cart. Once the transaction is complete, a receipt is generated, and the
+                            inventory quantity is automatically updated to reflect the sale.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (9) Transaction History Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(9) Transaction History Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/claws/transaction_history_page.png" alt="" class="img-fluid"
+                                style="height: 450px; border: none; margin-bottom: 20px;">
+                        </div>
+                        <div class="card-footer text-muted text-justify">
+                            This page provided a log of all past transactions. This page is read-only, allowing staff to
+                            view transaction details but not modify them.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Carousel Buttons -->
@@ -103,32 +227,37 @@
             </a>
         </div>
 
-        <!-- Video Presentation -->
-        <h3 class="project-title text-center mt-5 text-white">Video Presentation & System Demonstration</h3>
-        <div class="system-demo-card shadow-lg p-4 text-center">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/7sGqShstxFE" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <!-- Problem Solved -->
+        <h3 class="project-title text-center mt-5 text-white">Problem Solved by Claws Pet Shop Management System</h3>
+        <div class="future-improvements shadow-lg text-justify">
+            <p><strong>1. Inventory Tracking</strong></p>
+            <p>The system automatically updates product inventory after each sale, reducing the risk of errors caused by
+                manual inventory management.
+            </p>
+
+            <p><strong>2. Sales and Transaction History Tracking</strong></p>
+            <p>The transaction history feature helps keep track of all sales, ensuring transparency and easy access to
+                past transactions for record-keeping and analysis.
+            </p>
         </div>
 
         <!-- Future Improvements -->
         <h3 class="project-title text-center mt-5 text-white">Future Improvements</h3>
         <div class="future-improvements shadow-lg">
-            <p><strong>1. Mobile Responsiveness</strong></p>
-            <p>The current design is optimized for larger screens. Future enhancements will improve responsiveness for
-                better mobile usability.</p>
+            <p><strong>1. Mobile App Development</strong></p>
+            <p>A mobile app could be developed to allow staff to manage the pet shop operations remotely, making the
+                system more accessible and flexible for staff on the go.
+            </p>
 
-            <p><strong>2. Faculty-Level Hierarchy</strong></p>
-            <p>Currently, evaluations are based on specific programs. A planned improvement is introducing a
-                faculty-level hierarchy, grouping programs under faculties, allowing more insightful evaluations at both
-                levels.</p>
+            <p><strong>2. Stock Management Enhancement</strong></p>
+            <p>The system could be enhanced to automatically notify once stock levels fall below a certain threshold,
+                ensuring that popular items are always in stock.</p>
         </div>
 
         <!-- Floating Back Button -->
-        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="left"
-            title="Click to go back to projects page">
+        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="top"
+            title="Click to go back to the previous projects page.">
             < </a>
-
     </section>
 
     <!-- Share URL Dialog -->

@@ -462,6 +462,33 @@ section {
 
 /************************************************************************************************************************/
 /* 2.1 Projects Details Page - SEGi EduRate */
+/* Floating Button */
+.tooltip-inner {
+    background-color: #cce5ff !important; 
+    color: #000 !important;
+    font-size: 16px;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: #cce5ff !important; 
+}
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #cce5ff !important;
+}
+
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: #cce5ff !important;
+}
+
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: #cce5ff !important;
+}
+
 /* 2.1.1 Project Details Page - SEGi EduRate >> Project Header Section */
 .project-header {
     /* position: fixed; */
@@ -854,7 +881,7 @@ section {
     background: #1f2a46;
     border-radius: 10px;
     padding: 40px;
-    max-width: 500px;
+    /* max-width: 500px; */
     width: 100%;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -1229,7 +1256,7 @@ section {
         padding-left: 0; 
         width: 100%; 
         text-align: left; 
-    }
+    } 
 }
 
 @media (max-width: 850px) {

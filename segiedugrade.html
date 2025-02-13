@@ -31,15 +31,15 @@
                 </div>
                 <div class="col-md-7">
                     <p><strong>System Name:</strong> SEGi EduGrade</p>
-                    <p><strong>Aims:</strong> To help students effortlessly track and calculate their GPA and CGPA,
+                    <p><strong>Aims:</strong> To help students track and calculate their GPA and CGPA,
                         streamlining academic progress monitoring.</p>
                     <p><strong>Technologies Used:</strong> Java, SQLite, Android Studio</p>
-                    <p><strong>Development Time:</strong> April 2024</p>
+                    <p><strong>Development Time:</strong> April 2024 (Assignment of Mobile Application Development)</p>
                     <p><strong>Features: -</strong>
                     <ul>
-                        <li>Enables users to add, modify, and delete semesters.</li>
-                        <li>Allows users to add, modify, and delete courses within a specific semester.</li>
-                        <li>Automatically calculates GPA and CGPA based on course grades and credit hours.</li>
+                        <li>Enabled users to add, modify, and delete semesters.</li>
+                        <li>Allowed users to add, modify, and delete courses within a specific semester.</li>
+                        <li>Automatically calculated GPA and CGPA based on course grades and credit hours.</li>
                     </ul>
                     </p>
                 </div>
@@ -47,7 +47,7 @@
         </div>
 
         <!-- Relevant System Demonstrations -->
-        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (4 Main Highlights)</h3>
+        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (4 Main Features)</h3>
         <div class="container text-white">
             <div class="row">
                 <div class="col-md-6 feature-lists">
@@ -68,27 +68,79 @@
         <!-- Carousel -->
         <div id="keyFeaturesCarousel" class="features-card carousel slide shadow-lg" data-bs-touch="false">
             <div class="carousel-inner">
-                <!-- (1) Admin Dashboard -->
+                <!-- (1) Sign Up and Login -->
                 <div class="carousel-item active">
                     <div class="feature-card shadow-lg text-center">
-                        <h5>(1) Admin Dashboard</h5>
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/DepPADUXGn0?autoplay=1&mute=1" frameborder="0"
+                        <h5>(1) Sign Up and Login</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/tpRJ-WbBoMw?&mute=1"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
 
                         <div class="card-footer text-muted text-justify">
-                            The admin dashboard offers an overview of system activities. It displays the active
-                            semesters and evaluation progress, along with several charts highlighting key metrics. All
-                            charts can be exported in SVG, PNG, or CSV format for further
-                            analysis and reporting. The final component is a calendar, allowing users to view the
-                            semester and evaluation durations.
+                            New users of SEGi EduGrade will need to sign up to create an account. Upon successful login,
+                            users will be directed to the dashboard page.
                         </div>
                     </div>
                 </div>
 
+                <!-- (2) Dashboard Page -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(2) Dashboard Page</h5>
+                        <div class="d-flex justify-content-center flex-column flex-sm-row">
+                            <img src="img/segiedugrade/dashboard_demo_1.png" alt="" class="img-fluid"
+                                style="height: 500px; margin-right: 10px; border: none;">
+                            <img src="img/segiedugrade/dashboard_demo_2.png" alt="" class="img-fluid"
+                                style="height: 500px; border: none; margin-bottom: 20px;">
+                        </div>
 
+                        <div class="card-footer text-muted text-justify">
+                            The dashboard page offers a personalized greeting with the user's username and the system
+                            logo. It features a bar chart that illustrates the user's CGPA. Below the chart, four key
+                            metrics provide an overview of the user's academic progress: total semesters, total courses,
+                            total credit hours, and highest GPA.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (3) Manage Semesters & Courses -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(3) Manage Semesters & Courses</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/43yuPWg0BMY?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div class="card-footer text-muted text-justify">
+                            On the "Semesters" menu, users can add a new semester and assign courses to it by entering
+                            the course name, credit hours, and grade point. The system will automatically calculate the
+                            GPA and CGPA. Users can modify the semester duration, delete semesters, or update course
+                            information such as course name, credit hours, and grade point (course codes cannot be
+                            changed). Additionally, users can remove courses from the semester as needed.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (4) Profile Setting -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(4) Profile Setting</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/f2mLYiAmBOg?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div class="card-footer text-muted text-justify">
+                            The profile setting page allows users to modify their username and password. However, users
+                            are not allowed to change their email address.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Carousel Buttons -->
@@ -102,30 +154,42 @@
             </a>
         </div>
 
-        <!-- Video Presentation -->
-        <h3 class="project-title text-center mt-5 text-white">Video Presentation & System Demonstration</h3>
-        <div class="system-demo-card shadow-lg p-4 text-center">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/7sGqShstxFE" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <!-- Problem Solved -->
+        <h3 class="project-title text-center mt-5 text-white">Problem Solved by SEGi EduGrade</h3>
+        <div class="future-improvements shadow-lg text-justify">
+            <p><strong>1. Lack of CGPA Updates</strong></p>
+            <p>SEGi students only receive their GPA each semester, but to get the CGPA, they have to manually contact
+                their academic advisor or counselor, which is time-consuming. With SEGi EduGrade, students can easily
+                monitor both their GPA and CGPA, as the app clearly displays all semester GPAs and CGPA.
+            </p>
+
+            <p><strong>2. Lack of Customization for Malaysia's Grading Systems</strong></p>
+            <p>Many existing CGPA calculators are incompatible with Malaysia's grading system (4.0), leading to
+                calculation errors. SEGi EduGrade is specifically tailored to the Malaysian education system, ensuring
+                accurate GPA and CGPA calculations that reflect Malaysia's grading scales.</p>
         </div>
 
         <!-- Future Improvements -->
         <h3 class="project-title text-center mt-5 text-white">Future Improvements</h3>
-        <div class="future-improvements shadow-lg">
-            <p><strong>1. Mobile Responsiveness</strong></p>
-            <p>The current design is optimized for larger screens. Future enhancements will improve responsiveness for
-                better mobile usability.</p>
+        <div class="future-improvements shadow-lg text-justify">
+            <p><strong>1. Cloud Data Sync for Multiple Devices</strong></p>
+            <p>Currently, SEGi EduGrade uses SQLite as a local database, meaning if users switch devices, their data
+                will be lost. In the future, I plan to integrate a cloud database solution like Firebase to ensure data
+                is securely stored and accessible across different devices.</p>
 
-            <p><strong>2. Faculty-Level Hierarchy</strong></p>
-            <p>Currently, evaluations are based on specific programs. A planned improvement is introducing a
-                faculty-level hierarchy, grouping programs under faculties, allowing more insightful evaluations at both
-                levels.</p>
+            <p><strong>2. Export Functionality</strong></p>
+            <p>The current system lacks the ability to export data. Future updates will include features like exporting
+                GPA and CGPA reports in PDF, CSV, or other formats, giving users more flexibility in managing and
+                sharing their data.</p>
+
+            <p><strong>3. Enhanced Analytics and Charts</strong></p>
+            <p>Currently, the app offers basic GPA and CGPA tracking. Future enhancements will include integrating
+                additional chart types to provide a more comprehensive overview of student's academic performance.</p>
         </div>
 
         <!-- Floating Back Button -->
-        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="left"
-            title="Click to go back to projects page">
+        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="top"
+            title="Click to go back to the previous projects page.">
             < </a>
 
     </section>

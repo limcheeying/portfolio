@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | SMS</title>
+    <title>Project | SEGi SMS</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <!-- Bootstrap Link -->
@@ -16,7 +16,7 @@
 <body>
     <section class="project-header">
         <div class="project-detail-type project-degree">DEGREE</div>
-        <h3 class="mb-0 text-center flex-grow-1">Student Management System (SMS)</h3>
+        <h3 class="mb-0 text-center flex-grow-1">SEGi Student Management System (SMS)</h3>
         <button class="btn-share" onclick="showShareDialog()"><i class='bx bxs-share-alt'></i>Share</button>
     </section>
 
@@ -32,37 +32,37 @@
                     </video>
                 </div>
                 <div class="col-md-7">
-                    <p><strong>System Name:</strong> Student Management System (SMS)</p>
-                    <p><strong>Aims:</strong> To enhance the study process for IT subjects by offering flip-to-reveal
-                        flashcards that promote active recall.</p>
+                    <p><strong>System Name:</strong> SEGi Student Management System (SMS)</p>
+                    <p><strong>Aims:</strong> To allow the lecturer to manage students, courses, and semesters while
+                        monitoring the student grade reports. </p>
                     <p><strong>Technologies Used:</strong> Java, Local File Storage, Apache NetBeans</p>
-                    <p><strong>Development Time:</strong> April 2024</p>
-                    <p><strong>Features: -</strong>
+                    <p><strong>Development Time:</strong> April 2024 (Assignment of Advanced Programming)</p>
+                    <p><strong>Features: -</strong></p>
                     <ul>
-                        <li>Allowed lecturers to manage students, courses (can set predefined courses), and semesters
-                            and view the student grade reports with chart visualization.</li>
+                        <li>Provided a dashboard displaying key system metrics and student performance insights</li>
+                        <li>Allowed lecturers to add, edit, and delete student and course records.</li>
+                        <li>Enabled lecturers to manage semesters, including student enrollment and grade entry.</li>
+                        <li>Generated student grade reports with graphical GPA trends.</li>
                     </ul>
-                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Relevant System Demonstrations -->
-        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (6 Main Highlights)</h3>
+        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (8 Main Features)</h3>
         <div class="container text-white">
             <div class="row">
                 <div class="col-md-6 feature-lists">
                     <ol>
-                        <li>Login (Forget Password)</li>
-                        <li>Home Page</li>
-                        <li class="highlight-feature">Flashcards Page </li>
+                        <li>Dashboard Page</li>
+                        <li>Manage Students</li>
+                        <li>Manage Courses</li>
                     </ol>
                 </div>
                 <div class="col-md-6 feature-lists">
                     <ol start="4">
-                        <li>Save Flashcard as Favorite</li>
-                        <li>Share Flashcard (Text or Image)</li>
-                        <li>Profile</li>
+                        <li>Manage Semesters</li>
+                        <li class="highlight-feature">Grade Report</li>
                     </ol>
                 </div>
             </div>
@@ -71,27 +71,91 @@
         <!-- Carousel -->
         <div id="keyFeaturesCarousel" class="features-card carousel slide shadow-lg" data-bs-touch="false">
             <div class="carousel-inner">
-                <!-- (1) Admin Dashboard -->
+                <!-- (1) Dashboard Page -->
                 <div class="carousel-item active">
                     <div class="feature-card shadow-lg text-center">
-                        <h5>(1) Admin Dashboard</h5>
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/DepPADUXGn0?autoplay=1&mute=1" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        <h5>(1) Dashboard Page</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/vShNcgYN8iY?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
 
                         <div class="card-footer text-muted text-justify">
-                            The admin dashboard offers an overview of system activities. It displays the active
-                            semesters and evaluation progress, along with several charts highlighting key metrics. All
-                            charts can be exported in SVG, PNG, or CSV format for further
-                            analysis and reporting. The final component is a calendar, allowing users to view the
-                            semester and evaluation durations.
+                            The system currently supports a single lecturer login for demo purposes. After logging in,
+                            the lecturer sees a dashboard with key metrics like total students, courses, and semesters,
+                            along with charts for gender distribution, program distribution, and semester GPA trends.
                         </div>
                     </div>
                 </div>
 
+                <!-- (2) Manage Students -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(2) Manage Students</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/ZmYiXz2xUmU?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="card-footer text-muted text-justify">
+                            Lecturers can add, edit, and delete student records, with all student data stored in a
+                            dedicated file.
+                        </div>
+                    </div>
+                </div>
 
+                <!-- (3) Manage Courses -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(3) Manage Courses</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/pFsxNTLhXi4?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div class="card-footer text-muted text-justify">
+                            This feature allows lecturers to create, edit, and delete courses while setting prerequisite
+                            course(s). The course data are stored in another separate file for management.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (4) Manage Semesters -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(4) Manage Semesters</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/0fEuusLutUU?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div class="card-footer text-muted text-justify">
+                            Lecturers can enroll students in courses within a semester. Once grades are entered, the
+                            system automatically calculates the student's GPA, ensuring accurate academic tracking.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (5) Grade Report -->
+                <div class="carousel-item">
+                    <div class="feature-card shadow-lg text-center">
+                        <h5>(5) Grade Report</h5>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/nGD_jMlL4kM?&mute=1"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                        <div class="card-footer text-muted text-justify">
+                            A student's GPA and CGPA history can be viewed across multiple semesters. The system also
+                            provides visualizations through bar charts, making it easier to analyze academic performance
+                            trends.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Carousel Buttons -->
@@ -105,30 +169,34 @@
             </a>
         </div>
 
-        <!-- Video Presentation -->
-        <h3 class="project-title text-center mt-5 text-white">Video Presentation & System Demonstration</h3>
-        <div class="system-demo-card shadow-lg p-4 text-center">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/7sGqShstxFE" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <!-- Problem Solved -->
+        <h3 class="project-title text-center mt-5 text-white">Problem Solved by SMS</h3>
+        <div class="future-improvements shadow-lg text-justify">
+            <p><strong>1. Course Prerequisites</strong></p>
+            <p>Enables lecturers to set course prerequisites during course creation, automatically ensuring that
+                students follow the correct course progression when managing their semesters.</p>
+
+            <p><strong>2. Visual Representation of Student Performance</strong></p>
+            <p>Uses charts to illustrate GPA trends, improving academic tracking.
+            </p>
         </div>
 
         <!-- Future Improvements -->
         <h3 class="project-title text-center mt-5 text-white">Future Improvements</h3>
         <div class="future-improvements shadow-lg">
-            <p><strong>1. Mobile Responsiveness</strong></p>
-            <p>The current design is optimized for larger screens. Future enhancements will improve responsiveness for
-                better mobile usability.</p>
+            <p><strong>1. Multi-User Authentication</strong></p>
+            <p>The current system is hardcoded for lecturers to log in. In the future, a database (transition from
+                file-based storage to MySQL) can be implemented to support multiple user roles, such as admins for
+                managing lecturer accounts.</p>
 
-            <p><strong>2. Faculty-Level Hierarchy</strong></p>
-            <p>Currently, evaluations are based on specific programs. A planned improvement is introducing a
-                faculty-level hierarchy, grouping programs under faculties, allowing more insightful evaluations at both
-                levels.</p>
+            <p><strong>2. Export Functionality</strong></p>
+            <p>Currently, the system only allows users to view reports. In future, it can incorporate an export feature,
+                enabling users to download reports in PDF, CSV, or other file formats.</p>
         </div>
 
         <!-- Floating Back Button -->
-        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="left"
-            title="Click to go back to projects page">
+        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="top"
+            title="Click to go back to the previous projects page.">
             < </a>
 
     </section>
