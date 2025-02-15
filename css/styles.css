@@ -558,6 +558,18 @@ section {
     margin-top: 30px;
 }
 
+.modal-dialog {
+    display: flex;
+    align-items: flex-start; /* Aligns modal at the top */
+    justify-content: center; /* Centers it horizontally */
+    min-height: 100vh; /* Ensures full height */
+    margin: 0 auto; /* Centers horizontally */
+}
+
+.modal-content {
+    margin-top: 10vh; /* Adjusts top spacing */
+}
+
 /* 2.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
 .project-title {
     color: #fff;
