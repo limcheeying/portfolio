@@ -560,14 +560,14 @@ section {
 
 .modal-dialog {
     display: flex;
-    align-items: flex-start; /* Aligns modal at the top */
-    justify-content: center; /* Centers it horizontally */
-    min-height: 100vh; /* Ensures full height */
-    margin: 0 auto; /* Centers horizontally */
+    align-items: flex-start; 
+    justify-content: center; 
+    min-height: 100vh; 
+    margin: 0 auto; 
 }
 
 .modal-content {
-    margin-top: 5vh; /* Adjusts top spacing */
+    margin-top: 5vh; 
 }
 
 /* 2.1.2 Project Details Page - SEGi EduRate >> Project Overview Card */
