@@ -785,6 +785,12 @@ section {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.card-footer ul li {
+    list-style-type: disc; 
+    margin-left: 30px;
+    padding-left: 20px; 
+}
+
 /* 2.1.5 Project Details Page - SEGi EduRate >> Video Presentation */
 .system-demo-card {
     width: 100%;

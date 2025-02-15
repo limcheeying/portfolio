@@ -16,10 +16,10 @@
 
     <!-- CSS File-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    
+
     <!-- Tab Icon -->
     <link rel="icon" href="img/icon.png" type="image/x-icon">
-    
+
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <!-- SweetAlert2 CSS -->
@@ -54,8 +54,8 @@
                     <p><strong>Development Time:</strong> September - December 2023 (Diploma FYP)</p>
                     <p><strong>Features: -</strong>
                     <ul>
-                        <li>Enabled admins to manage users (students & lecturers), courses, semesters, and evaluation
-                            forms.</li>
+                        <li>Enabled admins to manage users (students & lecturers), courses, semesters, evaluation
+                            forms, and evaluation reports.</li>
                         <li>Ensured only authorized students can submit evaluations anonymously, with only one
                             submission per evaluation.</li>
                         <li>Automated email reminders sent only to students who have not yet filled in (automatically
@@ -142,13 +142,31 @@
                             allowfullscreen>
                         </iframe>
 
-                        <div class="card-footer text-muted text-justify">
-                            This feature allows admins to create, edit, and delete semesters. It coordinates courses,
-                            lecturers, and students by linking them to specific semesters. Admins can assign courses
-                            (from existing course data) to lecturers (selected from created lecturer data) and
-                            enroll students (from the created student list) into the appropriate courses for the
-                            selected semester.
+                        <div class="card-footer text-muted">
+                            <p class="text-justify">
+                                This feature enables admins to efficiently manage semesters by creating, editing, and
+                                deleting them. It ensures seamless coordination of courses, lecturers, and students by
+                                linking them to specific semesters. This menu also includes the following handling features: -
+                            </p>
+                            <ul class="ps-3">
+                                <li><strong>Course & Lecturer Assignment:</strong> Admins can assign courses (from
+                                    existing course data) to lecturers (selected from active lecturer records) and
+                                    enroll students (from the created student list) into relevant courses for the
+                                    selected semester.</li>
+                                <li><strong>Automated Semester Status:</strong> The system automatically updates
+                                    semester statuses (active/inactive) based on their duration, eliminating the need
+                                    for manual adjustments. Inactive semesters will be hidden from students, and
+                                    evaluation forms (if applicable) will not be generated. Only active semesters will be available as an option in the "Evaluation Forms" menu for generation.</li>
+                                <li><strong>Lecturer Filtering:</strong> Only lecturers with an "Active" status will be
+                                    available for course assignment, while those marked as "Retired" or "Resigned" will
+                                    be excluded.</li>
+                                <li><strong>Automated Student Enrollment Status:</strong> Student enrollment status
+                                    (active/inactive) is updated automatically based on school years. Inactive students
+                                    will not appear in the selection list when assigning students to courses.</li>
+                            </ul>
                         </div>
+                        
+
                     </div>
                 </div>
 
@@ -238,7 +256,7 @@
         </div>
 
         <!-- Video Presentation -->
-        <h3 class="project-title text-center mt-5 text-white">Video Presentation & System Demonstration</h3>
+        <h3 class="project-title text-center mt-5 text-white">Video Presentation</h3>
         <div class="system-demo-card shadow-lg p-4 text-center">
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/7sGqShstxFE" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

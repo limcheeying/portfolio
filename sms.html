@@ -40,7 +40,8 @@
                     <p><strong>Features: -</strong></p>
                     <ul>
                         <li>Provided a dashboard displaying key system metrics and student performance insights</li>
-                        <li>Allowed lecturers to add, edit, and delete student and course records.</li>
+                        <li>Allowed lecturers to add, edit, and delete students and courses (can set predefined
+                            courses).</li>
                         <li>Enabled lecturers to manage semesters, including student enrollment and grade entry.</li>
                         <li>Generated student grade reports with graphical GPA trends.</li>
                     </ul>
@@ -133,8 +134,25 @@
                         </iframe>
 
                         <div class="card-footer text-muted text-justify">
-                            Lecturers can enroll students in courses within a semester. Once grades are entered, the
-                            system automatically calculates the student's GPA, ensuring accurate academic tracking.
+                            <p class="text-justify">
+                                Lecturers can enroll students in courses within a semester. Once grades are entered, the
+                                system automatically calculates the student's GPA, ensuring accurate academic tracking.
+                            </p>
+                            <ul class="ps-3">
+                                <li><strong>Prerequisite Course Validation:</strong> If a lecturer attempts to enroll a
+                                    student in a course
+                                    without completing its prerequisite, the system will alert the lecturer.</li>
+
+                                <li><strong>Semester Enrollment Restriction:</strong> Each student can only be assigned
+                                    to a specific semester
+                                    (e.g., Y1S1 for Year 1 Semester 1) once. If the lecturer attempts to re-enroll a
+                                    student in the same semester,
+                                    an error dialog will be displayed.</li>
+
+                                <li><strong>Data Management:</strong> Semester data, including student and course links,
+                                    will be managed
+                                    in a separate file for better organization and maintainability.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
