@@ -183,6 +183,7 @@ section {
     line-height: 1.6;
     color: var(--text-color);
     list-style-type: disc;
+    text-align: justify;
 }
 
 .about-text ul li strong {
