@@ -120,6 +120,7 @@ section {
 .about-text {
     max-width: 600px;
     color: var(--text-color);
+    text-align: justify;
 }
 
 .about-text h2 {
@@ -175,6 +176,7 @@ section {
 .about-text ul {
     padding-left: 20px;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .about-text ul li {
@@ -183,7 +185,6 @@ section {
     line-height: 1.6;
     color: var(--text-color);
     list-style-type: disc;
-    text-align: justify;
 }
 
 .about-text ul li strong {
