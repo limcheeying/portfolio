@@ -111,7 +111,7 @@ section {
 
 .about-me-img img {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
