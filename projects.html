@@ -1,152 +1,183 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio | Projects</title>
 
-    <title>Portfolio | Projects</title>
+		<!-- SEO Meta Tags -->
+		<meta
+			name="description"
+			content="Explore projects by Lim Chee Ying, including web development, mobile apps, and backend systems using CodeIgniter, Java, Flutter, and MySQL."
+		/>
+		<meta
+			name="keywords"
+			content="Lim Chee Ying Projects, Web Development, Mobile Apps, CodeIgniter, Java, Flutter, MySQL"
+		/>
+		<meta name="author" content="Lim Chee Ying" />
+		<meta name="robots" content="index, follow" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Explore projects by Lim Chee Ying, including web development, mobile apps, and backend systems using CodeIgniter, Java, Flutter, and MySQL.">
-    <meta name="keywords"
-        content="Lim Chee Ying Projects, Web Development, Mobile Apps, CodeIgniter, Java, Flutter, MySQL">
-    <meta name="author" content="Lim Chee Ying">
-    <meta name="robots" content="index, follow">
+		<!-- CSS File-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <!-- CSS File-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!-- Tab Icon -->
+		<link rel="icon" href="img/icon.png" type="image/x-icon" />
 
-    <!-- Tab Icon -->
-    <link rel="icon" href="img/icon.png" type="image/x-icon">
+		<!-- Boxicons Link -->
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
-    <!-- Boxicons Link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<!-- Google Fonts Link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-    <!-- Google Fonts Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+		gtag('config', 'G-Z85VEZGX10');
+	</script>
 
-    gtag('config', 'G-Z85VEZGX10');
-</script>
+	<body>
+		<!-- Header Section -->
+		<header>
+			<a href="index.html" class="logo"><span>Lim </span>Chee Ying</a>
+			<ul class="navbar">
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="projects.html" class="active">Projects</a></li>
+				<li><a href="contact_me.html">Contact Me</a></li>
+			</ul>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="index.html" class="logo"><span>Lim </span>Chee Ying</a>
-        <ul class="navbar">
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
-        </ul>
+			<div class="menu-btn">
+				<i class="bx bx-menu" id="menu-icon"></i>
+			</div>
+		</header>
 
-        <div class="menu-btn">
-            <i class="bx bx-menu" id="menu-icon"></i>
-        </div>
-    </header>
+		<!-- Projects Section -->
+		<section class="projects">
+			<h2 class="projects-title">Project Experiences</h2>
+			<p class="projects-description">
+				Here are some of the individual projects that I have developed during my Diploma and Degree courses.
+			</p>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2 class="projects-title">Project Experiences</h2>
-        <p class="projects-description">
-            Here are some of the individual projects that I have developed during my Diploma and Degree courses.
-        </p>
+			<!-- Project Cards -->
+			<div class="projects-list">
+				<!-- 1. SEGi EduRate -->
+				<div class="project-card">
+					<div class="project-numbering">1</div>
+					<div class="project-level diploma">DIPLOMA FYP</div>
+					<img
+						src="img/segiedurate/dashboard.png"
+						alt="SEGi EduRate"
+						class="project-image"
+						title="SEGi EduRate's Dashboard Page"
+					/>
+					<div class="project-details">
+						<h5 class="project-name">SEGi EduRate</h5>
+						<p class="project-description">
+							A web-based lecturer evaluation system developed using CodeIgniter, Bootstrap, HTML, CSS,
+							PHP, and JavaScript, with a MySQL database managed through phpMyAdmin.
+						</p>
+						<a href="segiedurate.html" class="view-more-link">View More</a>
+					</div>
+				</div>
 
-        <!-- Project Cards -->
-        <div class="projects-list">
-            <!-- 1. SEGi EduRate -->
-            <div class="project-card">
-                <div class="project-numbering">1</div>
-                <div class="project-level diploma">DIPLOMA FYP</div>
-                <img src="img/segiedurate/dashboard.png" alt="SEGi EduRate" class="project-image"
-                    title="SEGi EduRate's Dashboard Page">
-                <div class="project-details">
-                    <h5 class="project-name">SEGi EduRate</h5>
-                    <p class="project-description">A web-based lecturer evaluation system developed using CodeIgniter,
-                        Bootstrap, HTML, CSS, PHP, and JavaScript, with a MySQL database managed through phpMyAdmin.
-                    </p>
-                    <a href="segiedurate.html" class="view-more-link" target="_blank">View More</a>
-                </div>
-            </div>
+				<!-- 2. IT FlashLearn -->
+				<div class="project-card">
+					<div class="project-numbering">2</div>
+					<div class="project-level degree">DEGREE</div>
+					<img
+						src="img/it_flashlearn/home_page.png"
+						alt="IT FlashLearn"
+						class="project-image"
+						title="IT FlashLearn's Home Page"
+					/>
+					<div class="project-details">
+						<h5 class="project-name">IT FlashLearn</h5>
+						<p class="project-description">
+							A cross-platform mobile app built with Flutter and Firebase, designed to help users learn IT
+							courses using flashcards.
+						</p>
+						<a href="it_flashlearn.html" class="view-more-link">View More</a>
+					</div>
+				</div>
 
-            <!-- 2. IT FlashLearn -->
-            <div class="project-card">
-                <div class="project-numbering">2</div>
-                <div class="project-level degree">DEGREE</div>
-                <img src="img/it_flashlearn/home_page.png" alt="IT FlashLearn" class="project-image"
-                    title="IT FlashLearn's Home Page">
-                <div class="project-details">
-                    <h5 class="project-name">IT FlashLearn</h5>
-                    <p class="project-description">A cross-platform mobile app built with Flutter and Firebase, designed
-                        to help users learn IT courses using flashcards.
-                    </p>
-                    <a href="it_flashlearn.html" class="view-more-link" target="_blank">View More</a>
-                </div>
-            </div>
+				<!-- 3. SEGi EduGrade -->
+				<div class="project-card">
+					<div class="project-numbering">3</div>
+					<div class="project-level degree">DEGREE</div>
+					<img
+						src="img/segiedugrade/dashboard.png"
+						alt="SEGi EduGrade"
+						class="project-image"
+						title="SEGi EduGrade's Dashboard Page"
+					/>
+					<div class="project-details">
+						<h5 class="project-name">SEGi EduGrade</h5>
+						<p class="project-description">
+							An Android app that helps users track their GPA and CGPA, developed using Java and SQLite in
+							Android Studio.
+						</p>
+						<a href="segiedugrade.html" class="view-more-link">View More</a>
+					</div>
+				</div>
 
-            <!-- 3. SEGi EduGrade -->
-            <div class="project-card">
-                <div class="project-numbering">3</div>
-                <div class="project-level degree">DEGREE</div>
-                <img src="img/segiedugrade/dashboard.png" alt="SEGi EduGrade" class="project-image"
-                    title="SEGi EduGrade's Dashboard Page">
-                <div class="project-details">
-                    <h5 class="project-name">SEGi EduGrade</h5>
-                    <p class="project-description">An Android app that helps users track their GPA and CGPA, developed
-                        using Java and SQLite in Android Studio.
-                    </p>
-                    <a href="segiedugrade.html" class="view-more-link" target="_blank">View More</a>
-                </div>
-            </div>
+				<!-- 4. Student Management System -->
+				<div class="project-card">
+					<div class="project-numbering">4</div>
+					<div class="project-level degree">DEGREE</div>
+					<img
+						src="img/sms/dashboard.png"
+						alt="Student Management System (SMS)"
+						class="project-image"
+						title="SMS's Dashboard Page"
+					/>
+					<div class="project-details">
+						<h5 class="project-name">Student Management System (SMS)</h5>
+						<p class="project-description">
+							A desktop app for managing students, courses, semesters, and grades, using Java's file I/O
+							with three separate data files.
+						</p>
+						<a href="sms.html" class="view-more-link">View More</a>
+					</div>
+				</div>
 
-            <!-- 4. Student Management System -->
-            <div class="project-card">
-                <div class="project-numbering">4</div>
-                <div class="project-level degree">DEGREE</div>
-                <img src="img/sms/dashboard.png" alt="Student Management System (SMS)" class="project-image"
-                    title="SMS's Dashboard Page">
-                <div class="project-details">
-                    <h5 class="project-name">Student Management System (SMS)</h5>
-                    <p class="project-description">A desktop app for managing students, courses, semesters, and grades,
-                        using Java's file I/O with three separate data files.
-                    </p>
-                    <a href="sms.html" class="view-more-link" target="_blank">View More</a>
-                </div>
-            </div>
+				<!-- 5. Claws Pet Shop Management System -->
+				<div class="project-card">
+					<div class="project-numbering">5</div>
+					<div class="project-level diploma">DIPLOMA</div>
+					<img
+						src="img/claws/homepage.png"
+						alt="Claws Pet Shop Management System's Home Page"
+						class="project-image"
+						title="Claws Pet Shop Management System's Home Page"
+					/>
+					<div class="project-details">
+						<h5 class="project-name">Claws Pet Shop Management System</h5>
+						<p class="project-description">
+							A desktop application for managing inventory, employees, and customers for a pet shop, built
+							using C# and MS Access.
+						</p>
+						<a href="claws_pet_shop_management_system.html" class="view-more-link">View More</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <!-- 5. Claws Pet Shop Management System -->
-            <div class="project-card">
-                <div class="project-numbering">5</div>
-                <div class="project-level diploma">DIPLOMA</div>
-                <img src="img/claws/homepage.png" alt="Claws Pet Shop Management System's Home Page"
-                    class="project-image" title="Claws Pet Shop Management System's Home Page">
-                <div class="project-details">
-                    <h5 class="project-name">Claws Pet Shop Management System</h5>
-                    <p class="project-description">A desktop application for managing inventory, employees, and
-                        customers for a pet shop, built using C# and MS Access.
-                    </p>
-                    <a href="claws_pet_shop_management_system.html" class="view-more-link" target="_blank">View More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Scroll Reveal Link -->
+		<script src="https://unpkg.com/scrollreveal"></script>
 
-
-    <!-- Scroll Reveal Link -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- Custom JS File Link -->
-    <script src="js/script.js"></script>
-</body>
+		<!-- Custom JS File Link -->
+		<script src="js/script.js"></script>
+	</body>
 </html>

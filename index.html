@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lim Chee Ying | Portfolio</title>
 
-    <title>Lim Chee Ying | Portfolio</title>
+		<!-- SEO Meta Tags -->
+		<meta
+			name="description"
+			content="Lim Chee Ying's portfolio - IT student specializing in backend, mobile, and web development. Explore my projects and skills."
+		/>
+		<meta
+			name="keywords"
+			content="Lim Chee Ying, IT Portfolio, Software Developer, Web Development, Mobile Apps, Backend, CodeIgniter, Java, Flutter, MySQL"
+		/>
+		<meta name="author" content="Lim Chee Ying" />
+		<meta name="robots" content="index, follow" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Lim Chee Ying's portfolio - IT student specializing in backend, mobile, and web development. Explore my projects and skills.">
-    <meta name="keywords"
-        content="Lim Chee Ying, IT Portfolio, Software Developer, Web Development, Mobile Apps, Backend, CodeIgniter, Java, Flutter, MySQL">
-    <meta name="author" content="Lim Chee Ying">
-    <meta name="robots" content="index, follow">
+		<!-- Open Graph Meta Tags (For social sharing) -->
+		<meta property="og:title" content="Lim Chee Ying | Portfolio" />
+		<meta
+			property="og:description"
+			content="IT student specializing in backend, mobile, and web development. Explore my projects and skills."
+		/>
+		<meta property="og:image" content="https://limcheeying.netlify.app/img/my_image2.png" />
+		<meta property="og:url" content="https://limcheeying.netlify.app/" />
+		<meta property="og:type" content="website" />
 
-    <!-- Open Graph Meta Tags (For social sharing) -->
-    <meta property="og:title" content="Lim Chee Ying | Portfolio">
-    <meta property="og:description"
-        content="IT student specializing in backend, mobile, and web development. Explore my projects and skills.">
-    <meta property="og:image" content="https://limcheeying.netlify.app/img/my_image2.png">
-    <meta property="og:url" content="https://limcheeying.netlify.app/">
-    <meta property="og:type" content="website">
+		<!-- CSS File-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <!-- CSS File-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!-- Tab Icon -->
+		<link rel="icon" href="img/icon.png" type="image/x-icon" />
 
-    <!-- Tab Icon -->
-    <link rel="icon" href="img/icon.png" type="image/x-icon">
+		<!-- Boxicons Link -->
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
-    <!-- Boxicons Link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<!-- Google Fonts Link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-    <!-- Google Fonts Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+		gtag('config', 'G-Z85VEZGX10');
+	</script>
 
-    gtag('config', 'G-Z85VEZGX10');
-</script>
+	<body>
+		<!-- Header Section -->
+		<header>
+			<a href="index.html" class="logo"><span>Lim </span>Chee Ying</a>
+			<ul class="navbar">
+				<li><a href="index.html" class="active">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact_me.html">Contact Me</a></li>
+			</ul>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="index.html" class="logo"><span>Lim </span>Chee Ying</a>
-        <ul class="navbar">
-            <li><a href="index.html" class="active">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
-        </ul>
+			<div class="menu-btn">
+				<i class="bx bx-menu" id="menu-icon"></i>
+			</div>
+		</header>
 
-        <div class="menu-btn">
-            <i class="bx bx-menu" id="menu-icon"></i>
-        </div>
-    </header>
+		<!-- About Me Section -->
+		<section class="about-me">
+			<div class="about-me-img">
+				<img src="img/cheeying_image.png" alt="Chee Ying's Image" />
+			</div>
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <div class="about-me-img">
-            <img src="img/cheeying_image.png" alt="Chee Ying's Image">
-        </div>
+			<div class="about-text">
+				<p>
+					Hi, I'm Lim Chee Ying! I'm a <span>IT fresh graduate</span>, passionate about
+					<span>web, mobile, and backend development</span>. I am currently seeking a full-time developer role
+					starting February 2026.
+				</p>
 
-        <div class="about-text">
-            <p>Hi, I'm Lim Chee Ying! I'm seeking a <span>three-month internship (May to August 2025)</span> to apply my
-                skills and contribute to IT projects. Passionate about <span>web, mobile, and backend
-                    development</span>, I enjoy solving complex problems through coding. Excited to collaborate and gain
-                real-world experience.</p>
+				<h3>Key Information: -</h3>
+				<ul>
+					<li><strong>Education:</strong> Bachelor of Information Technology, SEGi University</li>
+					<li><strong>CGPA:</strong> 3.98 / 4.0 (5 Semesters)</li>
+					<li>
+						<strong>Technical Skills:</strong> SpringBoot (Java), React, Node.js (Express.js, TypeORM),
+						TypeScript, CodeIgniter (PHP), Tailwind CSS, Bootstrap, Flutter, Android Studio, Python, C#,
+						MySQL, PostgreSQL, Oracle, Firebase, Git & GitHub
+					</li>
+					<li><strong>Languages:</strong> Mandarin (Native), English (MUET Band 4.0), Malay (Fluent)</li>
+				</ul>
 
-            <h3>Key Information: -</h3>
-            <ul>
-                <li><strong>Education:</strong> Bachelor of Information Technology, SEGi University</li>
-                <li><strong>CGPA:</strong> 3.98 / 4.0 (3 Semesters) </li>
-                <li><strong>Technical Skills:</strong> CodeIgniter, Bootstrap, PHP, JavaScript, Flutter, Android Studio
-                    (Java), Python, Java, C++, C#, MySQL, PostgreSQL, Oracle, Firebase, MS Power BI, Git & GitHub</li>
-                <li><strong>Languages:</strong> Mandarin, English (MUET Band 4.0), Malay</li>
-            </ul>
+				<div class="about-me-btn">
+					<a href="projects.html" class="btn-about btn-projects">View My Projects</a>
+				</div>
+			</div>
+		</section>
 
-            <div class="about-me-btn">
-                <a href="projects.html" class="btn-about btn-projects">View My Projects</a>
-            </div>
-        </div>
-    </section>
+		<!-- Scroll Reveal Link -->
+		<script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- Scroll Reveal Link -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- Custom JS File Link -->
-    <script src="js/script.js"></script>
-</body>
-
+		<!-- Custom JS File Link -->
+		<script src="js/script.js"></script>
+	</body>
 </html>

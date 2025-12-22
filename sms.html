@@ -1,337 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project | SEGi SMS</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | SEGi SMS</title>
+		<!-- SEO Meta Tags -->
+		<meta
+			name="description"
+			content="Get in touch with Lim Chee Ying for IT projects, software development, or internship opportunities. Contact via email or LinkedIn."
+		/>
+		<meta
+			name="keywords"
+			content="Contact Lim Chee Ying, IT Portfolio, Software Developer, Internship, LinkedIn, Email"
+		/>
+		<meta name="author" content="Lim Chee Ying" />
+		<meta name="robots" content="index, follow" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Get in touch with Lim Chee Ying for IT projects, software development, or internship opportunities. Contact via email or LinkedIn.">
-    <meta name="keywords" content="Contact Lim Chee Ying, IT Portfolio, Software Developer, Internship, LinkedIn, Email">
-    <meta name="author" content="Lim Chee Ying">
-    <meta name="robots" content="index, follow">
+		<!-- CSS File-->
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" href="img/icon.png" type="image/x-icon" />
+		<!-- Bootstrap Link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+		<!-- SweetAlert2 CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css" rel="stylesheet" />
+	</head>
 
-    <!-- CSS File-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/icon.png" type="image/x-icon">
-    <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <!-- SweetAlert2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css" rel="stylesheet">
-</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z85VEZGX10"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+		gtag('config', 'G-Z85VEZGX10');
+	</script>
 
-    gtag('config', 'G-Z85VEZGX10');
-</script>
+	<body>
+		<section class="project-header">
+			<div class="project-detail-type project-degree">DEGREE</div>
+			<h3 class="mb-0 text-center flex-grow-1">Student Management System (SMS)</h3>
+			<button class="btn-share" onclick="showShareDialog()"><i class="bx bxs-share-alt"></i>Share</button>
+		</section>
 
-<body>
-    <section class="project-header">
-        <div class="project-detail-type project-degree">DEGREE</div>
-        <h3 class="mb-0 text-center flex-grow-1">Student Management System (SMS)</h3>
-        <button class="btn-share" onclick="showShareDialog()"><i class='bx bxs-share-alt'></i>Share</button>
-    </section>
+		<section class="container mt-4">
+			<!-- Project Overview -->
+			<h3 class="project-title text-center">Project Overview</h3>
+			<div class="project-overview-card shadow-lg">
+				<div class="row">
+					<div class="col-md-5 text-center">
+						<video class="project-image" autoplay muted loop>
+							<source src="img/sms/dashboard.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="col-md-7">
+						<p><strong>System Name:</strong> Student Management System (SMS)</p>
+						<p>
+							<strong>Aims:</strong> To allow the lecturer to manage students, courses, and semesters
+							while monitoring the student grade reports.
+						</p>
+						<p><strong>Technologies Used:</strong> Java, Local File Storage, Apache NetBeans</p>
+						<p><strong>Development Time:</strong> April 2024 (Assignment of Advanced Programming)</p>
+						<p><strong>Features: -</strong></p>
+						<ul>
+							<li>Provided a dashboard displaying key system metrics and student performance insights</li>
+							<li>
+								Allowed lecturers to add, edit, and delete students and courses (can set predefined
+								courses).
+							</li>
+							<li>
+								Enabled lecturers to manage semesters, including student enrollment and grade entry.
+							</li>
+							<li>Generated student grade reports with graphical GPA trends.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-    <section class="container mt-4">
-        <!-- Project Overview -->
-        <h3 class="project-title text-center">Project Overview</h3>
-        <div class="project-overview-card shadow-lg">
-            <div class="row">
-                <div class="col-md-5 text-center">
-                    <video class="project-image" autoplay muted loop>
-                        <source src="img/sms/dashboard.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="col-md-7">
-                    <p><strong>System Name:</strong> Student Management System (SMS)</p>
-                    <p><strong>Aims:</strong> To allow the lecturer to manage students, courses, and semesters while
-                        monitoring the student grade reports. </p>
-                    <p><strong>Technologies Used:</strong> Java, Local File Storage, Apache NetBeans</p>
-                    <p><strong>Development Time:</strong> April 2024 (Assignment of Advanced Programming)</p>
-                    <p><strong>Features: -</strong></p>
-                    <ul>
-                        <li>Provided a dashboard displaying key system metrics and student performance insights</li>
-                        <li>Allowed lecturers to add, edit, and delete students and courses (can set predefined
-                            courses).</li>
-                        <li>Enabled lecturers to manage semesters, including student enrollment and grade entry.</li>
-                        <li>Generated student grade reports with graphical GPA trends.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+			<!-- Relevant System Demonstrations -->
+			<h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (8 Main Features)</h3>
+			<div class="container text-white">
+				<div class="row">
+					<div class="col-md-6 feature-lists">
+						<ol>
+							<li>Dashboard Page</li>
+							<li>Manage Students</li>
+							<li>Manage Courses</li>
+						</ol>
+					</div>
+					<div class="col-md-6 feature-lists">
+						<ol start="4">
+							<li>Manage Semesters</li>
+							<li class="highlight-feature">Grade Report</li>
+						</ol>
+					</div>
+				</div>
+			</div>
 
-        <!-- Relevant System Demonstrations -->
-        <h3 class="project-title text-center mt-5 text-white">Relevant System Demonstrations (8 Main Features)</h3>
-        <div class="container text-white">
-            <div class="row">
-                <div class="col-md-6 feature-lists">
-                    <ol>
-                        <li>Dashboard Page</li>
-                        <li>Manage Students</li>
-                        <li>Manage Courses</li>
-                    </ol>
-                </div>
-                <div class="col-md-6 feature-lists">
-                    <ol start="4">
-                        <li>Manage Semesters</li>
-                        <li class="highlight-feature">Grade Report</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
+			<!-- Carousel -->
+			<div id="keyFeaturesCarousel" class="features-card carousel slide shadow-lg" data-bs-touch="false">
+				<div class="carousel-inner">
+					<!-- (1) Dashboard Page -->
+					<div class="carousel-item active">
+						<div class="feature-card shadow-lg text-center">
+							<h5>(1) Dashboard Page</h5>
+							<iframe
+								width="100%"
+								height="500"
+								src="https://www.youtube.com/embed/vShNcgYN8iY?&mute=1"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
 
-        <!-- Carousel -->
-        <div id="keyFeaturesCarousel" class="features-card carousel slide shadow-lg" data-bs-touch="false">
-            <div class="carousel-inner">
-                <!-- (1) Dashboard Page -->
-                <div class="carousel-item active">
-                    <div class="feature-card shadow-lg text-center">
-                        <h5>(1) Dashboard Page</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/vShNcgYN8iY?&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+							<div class="card-footer text-muted text-justify">
+								The system currently supports a single lecturer login for demo purposes. After logging
+								in, the lecturer sees a dashboard with key metrics like total students, courses, and
+								semesters, along with charts for gender distribution, program distribution, and semester
+								GPA trends.
+							</div>
+						</div>
+					</div>
 
-                        <div class="card-footer text-muted text-justify">
-                            The system currently supports a single lecturer login for demo purposes. After logging in,
-                            the lecturer sees a dashboard with key metrics like total students, courses, and semesters,
-                            along with charts for gender distribution, program distribution, and semester GPA trends.
-                        </div>
-                    </div>
-                </div>
+					<!-- (2) Manage Students -->
+					<div class="carousel-item">
+						<div class="feature-card shadow-lg text-center">
+							<h5>(2) Manage Students</h5>
+							<iframe
+								width="100%"
+								height="500"
+								src="https://www.youtube.com/embed/ZmYiXz2xUmU?&mute=1"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
+							<div class="card-footer text-muted text-justify">
+								Lecturers can add, edit, and delete student records, with all student data stored in a
+								dedicated file.
+							</div>
+						</div>
+					</div>
 
-                <!-- (2) Manage Students -->
-                <div class="carousel-item">
-                    <div class="feature-card shadow-lg text-center">
-                        <h5>(2) Manage Students</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/ZmYiXz2xUmU?&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="card-footer text-muted text-justify">
-                            Lecturers can add, edit, and delete student records, with all student data stored in a
-                            dedicated file.
-                        </div>
-                    </div>
-                </div>
+					<!-- (3) Manage Courses -->
+					<div class="carousel-item">
+						<div class="feature-card shadow-lg text-center">
+							<h5>(3) Manage Courses</h5>
+							<iframe
+								width="100%"
+								height="500"
+								src="https://www.youtube.com/embed/pFsxNTLhXi4?&mute=1"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
 
-                <!-- (3) Manage Courses -->
-                <div class="carousel-item">
-                    <div class="feature-card shadow-lg text-center">
-                        <h5>(3) Manage Courses</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/pFsxNTLhXi4?&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+							<div class="card-footer text-muted text-justify">
+								This feature allows lecturers to create, edit, and delete courses while setting
+								prerequisite course(s). The course data are stored in another separate file for
+								management.
+							</div>
+						</div>
+					</div>
 
-                        <div class="card-footer text-muted text-justify">
-                            This feature allows lecturers to create, edit, and delete courses while setting prerequisite
-                            course(s). The course data are stored in another separate file for management.
-                        </div>
-                    </div>
-                </div>
+					<!-- (4) Manage Semesters -->
+					<div class="carousel-item">
+						<div class="feature-card shadow-lg text-center">
+							<h5>(4) Manage Semesters</h5>
+							<iframe
+								width="100%"
+								height="500"
+								src="https://www.youtube.com/embed/0fEuusLutUU?&mute=1"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
 
-                <!-- (4) Manage Semesters -->
-                <div class="carousel-item">
-                    <div class="feature-card shadow-lg text-center">
-                        <h5>(4) Manage Semesters</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/0fEuusLutUU?&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+							<div class="card-footer text-muted text-justify">
+								<p class="text-justify">
+									Lecturers can enroll students in courses within a semester. Once grades are entered,
+									the system automatically calculates the student's GPA, ensuring accurate academic
+									tracking. The semester data are stored in another separate file for management.
+								</p>
+								<ul class="ps-3">
+									<li>
+										<strong>Prerequisite Course Validation:</strong> If a lecturer attempts to
+										enroll a student in a course without completing its prerequisite, the system
+										will alert the lecturer.
+									</li>
 
-                        <div class="card-footer text-muted text-justify">
-                            <p class="text-justify">
-                                Lecturers can enroll students in courses within a semester. Once grades are entered, the
-                                system automatically calculates the student's GPA, ensuring accurate academic tracking.
-                                The semester data are stored in another separate file for management.
-                            </p>
-                            <ul class="ps-3">
-                                <li><strong>Prerequisite Course Validation:</strong> If a lecturer attempts to enroll a
-                                    student in a course
-                                    without completing its prerequisite, the system will alert the lecturer.</li>
+									<li>
+										<strong>Semester Enrollment Restriction:</strong> Each student can only be
+										assigned to a specific semester (e.g., Y1S1 for Year 1 Semester 1) once. If the
+										lecturer attempts to re-enroll a student in the same semester, an error dialog
+										will be displayed.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-                                <li><strong>Semester Enrollment Restriction:</strong> Each student can only be assigned
-                                    to a specific semester
-                                    (e.g., Y1S1 for Year 1 Semester 1) once. If the lecturer attempts to re-enroll a
-                                    student in the same semester,
-                                    an error dialog will be displayed.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+					<!-- (5) Grade Report -->
+					<div class="carousel-item">
+						<div class="feature-card shadow-lg text-center">
+							<h5>(5) Grade Report</h5>
+							<iframe
+								width="100%"
+								height="500"
+								src="https://www.youtube.com/embed/nGD_jMlL4kM?&mute=1"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
 
-                <!-- (5) Grade Report -->
-                <div class="carousel-item">
-                    <div class="feature-card shadow-lg text-center">
-                        <h5>(5) Grade Report</h5>
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/nGD_jMlL4kM?&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+							<div class="card-footer text-muted text-justify">
+								A student's GPA and CGPA history can be viewed across multiple semesters. The system
+								also provides visualizations through bar charts, making it easier to analyze academic
+								performance trends.
+							</div>
+						</div>
+					</div>
+				</div>
 
-                        <div class="card-footer text-muted text-justify">
-                            A student's GPA and CGPA history can be viewed across multiple semesters. The system also
-                            provides visualizations through bar charts, making it easier to analyze academic performance
-                            trends.
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<!-- Carousel Buttons -->
+				<a class="carousel-control-prev" href="#keyFeaturesCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#keyFeaturesCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
 
-            <!-- Carousel Buttons -->
-            <a class="carousel-control-prev" href="#keyFeaturesCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#keyFeaturesCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+			<!-- Problem Solved -->
+			<h3 class="project-title text-center mt-5 text-white">Problem Solved by SMS</h3>
+			<div class="future-improvements shadow-lg text-justify">
+				<p><strong>1. Course Prerequisites</strong></p>
+				<p>
+					Enables lecturers to set course prerequisites during course creation, automatically ensuring that
+					student enrollment in a semester will follow the correct course progression.
+				</p>
 
-        <!-- Problem Solved -->
-        <h3 class="project-title text-center mt-5 text-white">Problem Solved by SMS</h3>
-        <div class="future-improvements shadow-lg text-justify">
-            <p><strong>1. Course Prerequisites</strong></p>
-            <p>Enables lecturers to set course prerequisites during course creation, automatically ensuring that student
-                enrollment in a semester will follow the correct course progression.</p>
+				<p><strong>2. Visual Representation of Student Performance</strong></p>
+				<p>Uses charts to illustrate GPA trends, improving academic tracking.</p>
+			</div>
 
-            <p><strong>2. Visual Representation of Student Performance</strong></p>
-            <p>Uses charts to illustrate GPA trends, improving academic tracking.
-            </p>
-        </div>
+			<!-- Future Improvements -->
+			<h3 class="project-title text-center mt-5 text-white">Future Improvements</h3>
+			<div class="future-improvements shadow-lg">
+				<p><strong>1. Multi-User Authentication</strong></p>
+				<p>
+					The current system is hardcoded for lecturers to log in. In future, a database (transition from
+					file-based storage to MySQL) can be implemented to support multiple user roles, such as admins for
+					managing lecturer accounts.
+				</p>
 
-        <!-- Future Improvements -->
-        <h3 class="project-title text-center mt-5 text-white">Future Improvements</h3>
-        <div class="future-improvements shadow-lg">
-            <p><strong>1. Multi-User Authentication</strong></p>
-            <p>The current system is hardcoded for lecturers to log in. In future, a database (transition from
-                file-based storage to MySQL) can be implemented to support multiple user roles, such as admins for
-                managing lecturer accounts.</p>
+				<p><strong>2. Export Functionality</strong></p>
+				<p>
+					Currently, the system only allows users to view reports. In future, it can incorporate an export
+					feature, enabling users to download reports in PDF, CSV, or other file formats.
+				</p>
+			</div>
 
-            <p><strong>2. Export Functionality</strong></p>
-            <p>Currently, the system only allows users to view reports. In future, it can incorporate an export feature,
-                enabling users to download reports in PDF, CSV, or other file formats.</p>
-        </div>
+			<!-- Floating Back Button -->
+			<a
+				href="projects.html"
+				class="floating-btn"
+				data-toggle="tooltip"
+				data-placement="top"
+				title="Click to go back to the previous projects page."
+			>
+				<
+			</a>
+		</section>
 
-        <!-- Floating Back Button -->
-        <a href="projects.html" class="floating-btn" data-toggle="tooltip" data-placement="top"
-            title="Click to go back to the previous projects page.">
-            < </a>
+		<!-- Share URL Dialog -->
+		<div id="shareDialog" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Share Project URL</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<input type="text" id="shareUrl" class="form-control" value="" readonly />
+						<button class="btn-copy-url" onclick="copyUrl()">Copy URL</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    </section>
+		<!-- Bootstrap JS & jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Share URL Dialog -->
-    <div id="shareDialog" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Share Project URL</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <input type="text" id="shareUrl" class="form-control" value="" readonly>
-                    <button class="btn-copy-url" onclick="copyUrl()">Copy URL</button>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- SweetAlert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- Bootstrap JS & jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip();
 
-    <!-- SweetAlert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+				// Disable Bootstrap's automatic slide when interacting
+				var myCarousel = $('#keyFeaturesCarousel');
+				myCarousel.carousel({
+					interval: false, // Prevent auto-slide
+					pause: 'false', // Prevent pause on hover
+					wrap: false, // Prevent looping to first slide
+				});
 
+				// Ensure videos loop and autoplay
+				$('.feature-video').each(function () {
+					this.loop = true;
+					this.play(); // Ensures autoplay on load
+				});
 
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
+				// Ensure first video plays when page loads
+				$('.carousel-item.active video')[0].play();
 
-            // Disable Bootstrap's automatic slide when interacting
-            var myCarousel = $('#keyFeaturesCarousel');
-            myCarousel.carousel({
-                interval: false,  // Prevent auto-slide
-                pause: "false",   // Prevent pause on hover
-                wrap: false       // Prevent looping to first slide
-            });
+				// Restart video on slide change
+				myCarousel.on('slide.bs.carousel', function (event) {
+					$('.feature-video').each(function () {
+						this.pause(); // Pause all videos
+					});
 
-            // Ensure videos loop and autoplay
-            $(".feature-video").each(function () {
-                this.loop = true;
-                this.play(); // Ensures autoplay on load
-            });
+					var newSlide = $(event.relatedTarget);
+					var newVideo = newSlide.find('video')[0];
 
-            // Ensure first video plays when page loads
-            $(".carousel-item.active video")[0].play();
+					if (newVideo) {
+						newVideo.currentTime = 0; // Restart video
+						newVideo.play();
+					}
+				});
+			});
 
-            // Restart video on slide change
-            myCarousel.on('slide.bs.carousel', function (event) {
-                $(".feature-video").each(function () {
-                    this.pause(); // Pause all videos
-                });
+			// Show the Share URL Dialog
+			function showShareDialog() {
+				$('#shareDialog').modal('show');
+			}
 
-                var newSlide = $(event.relatedTarget);
-                var newVideo = newSlide.find("video")[0];
+			// Copy URL to clipboard
+			function copyUrl() {
+				var copyText = document.getElementById('shareUrl');
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
 
-                if (newVideo) {
-                    newVideo.currentTime = 0; // Restart video
-                    newVideo.play();
-                }
-            });
-        });
+				document.execCommand('copy');
 
-        // Show the Share URL Dialog
-        function showShareDialog() {
-            $('#shareDialog').modal('show');
-        }
+				// Close the modal
+				$('#shareDialog').modal('hide');
 
-        // Copy URL to clipboard
-        function copyUrl() {
-            var copyText = document.getElementById("shareUrl");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
+				// SweetAlert toast message
+				const Toast = Swal.mixin({
+					toast: true,
+					position: 'top-end',
+					showConfirmButton: false,
+					timer: 3000,
+					timerProgressBar: true,
+					didOpen: (toast) => {
+						toast.onmouseenter = Swal.stopTimer;
+						toast.onmouseleave = Swal.resumeTimer;
+					},
+				});
+				Toast.fire({
+					icon: 'success',
+					title: 'URL copied successfully!',
+				});
+			}
 
-            document.execCommand("copy");
-
-            // Close the modal
-            $('#shareDialog').modal('hide');
-
-            // SweetAlert toast message
-            const Toast = Swal.mixin({
-                toast: true,
-                position: "top-end",
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.onmouseenter = Swal.stopTimer;
-                    toast.onmouseleave = Swal.resumeTimer;
-                }
-            });
-            Toast.fire({
-                icon: "success",
-                title: "URL copied successfully!"
-            });
-        }
-
-        // Set the current page URL in the input field
-        document.getElementById('shareUrl').value = window.location.href;
-    </script>
-</body>
+			// Set the current page URL in the input field
+			document.getElementById('shareUrl').value = window.location.href;
+		</script>
+	</body>
+</html>
