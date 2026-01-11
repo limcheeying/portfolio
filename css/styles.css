@@ -12,7 +12,7 @@
 	--bg-color: #111c37;
 	--text-color: #fff;
 	--main-color: #00afff;
-	--alt-color: #845fffcc;
+	--alt-color: #c25fffcc;
 
 	--big-font: 3.5rem;
 	--p-font: 1.1rem;
@@ -150,13 +150,13 @@ section {
 	color: var(--alt-color);
 }
 
-.about-text span:hover {
+/* .about-text span:hover {
 	background-color: #c25fffcc;
 	color: #fff;
 	border-radius: 5px;
 	animation: none;
 	cursor: pointer;
-}
+} */
 
 /* 1.1 About Me Page - Flashing Animation for About Me Text */
 @keyframes flash {
