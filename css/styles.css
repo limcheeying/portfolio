@@ -12,7 +12,7 @@
 	--bg-color: #111c37;
 	--text-color: #fff;
 	--main-color: #00afff;
-	--alt-color: #9900ff;
+	--alt-color: #d400ff;
 
 	--big-font: 3.5rem;
 	--p-font: 1.1rem;
@@ -151,7 +151,7 @@ section {
 }
 
 .about-text span:hover {
-	background-color: #ae00ff;
+	background-color: #ff00ff;
 	color: #fff;
 	border-radius: 5px;
 	animation: none;
