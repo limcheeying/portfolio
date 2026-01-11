@@ -159,7 +159,7 @@ section {
 } */
 
 /* 1.1 About Me Page - Flashing Animation for About Me Text */
-@keyframes flash {
+/* @keyframes flash {
 	0% {
 		opacity: 1;
 	}
@@ -171,7 +171,7 @@ section {
 	100% {
 		opacity: 1;
 	}
-}
+} */
 
 .about-text ul {
 	padding-left: 20px;
